@@ -7,7 +7,7 @@ from keyboards import kb_client
 # @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
     try:
-        await bot.send_message(message.from_user.id, f'Привет! Имя бота - psychokid_deadinside_ghoul_kanekiken1000-7\n'
+        await bot.send_message(message.from_user.id, f'Привет! Имя бота - /.../'
                                                      f'\nНапишите "/help" для получения полного списка команд',
                                reply_markup=kb_client)
         await message.delete()
